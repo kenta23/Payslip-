@@ -1,4 +1,4 @@
-﻿Public Class form1
+Public Class form1
     Dim RatePerDay, OTrate, total, SS, health, totalDeduc, tax As Double
 
     'deductions total 
@@ -82,7 +82,7 @@
 
         totalDeduc = SS + health + tax
 
-        total = Val(txtWGP.Text) - Val(totalDeduc)
+        total = Val(txtWGP.Text) - Val(totalDeduc) + Val(txtOvertimePay.Text)
         lblTotal.Text = "Total: "
         lblTotal.Text = lblTotal.Text & " " & total
 

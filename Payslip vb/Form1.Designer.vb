@@ -65,7 +65,7 @@ Partial Class form1
         'txtName
         '
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(205, 59)
+        Me.txtName.Location = New System.Drawing.Point(222, 59)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(134, 31)
         Me.txtName.TabIndex = 2
@@ -73,7 +73,7 @@ Partial Class form1
         'txtRatePerday
         '
         Me.txtRatePerday.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRatePerday.Location = New System.Drawing.Point(205, 114)
+        Me.txtRatePerday.Location = New System.Drawing.Point(222, 111)
         Me.txtRatePerday.Name = "txtRatePerday"
         Me.txtRatePerday.Size = New System.Drawing.Size(134, 31)
         Me.txtRatePerday.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class form1
         'txtOThours
         '
         Me.txtOThours.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOThours.Location = New System.Drawing.Point(205, 173)
+        Me.txtOThours.Location = New System.Drawing.Point(222, 170)
         Me.txtOThours.Name = "txtOThours"
         Me.txtOThours.Size = New System.Drawing.Size(134, 31)
         Me.txtOThours.TabIndex = 5
@@ -111,7 +111,7 @@ Partial Class form1
         'txtWGP
         '
         Me.txtWGP.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtWGP.Location = New System.Drawing.Point(205, 287)
+        Me.txtWGP.Location = New System.Drawing.Point(222, 284)
         Me.txtWGP.Name = "txtWGP"
         Me.txtWGP.Size = New System.Drawing.Size(134, 31)
         Me.txtWGP.TabIndex = 7
@@ -184,12 +184,12 @@ Partial Class form1
         'lblCompany
         '
         Me.lblCompany.AutoSize = True
-        Me.lblCompany.Font = New System.Drawing.Font("Montserrat Subrayada", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCompany.Location = New System.Drawing.Point(-1, 9)
         Me.lblCompany.Name = "lblCompany"
-        Me.lblCompany.Size = New System.Drawing.Size(180, 23)
+        Me.lblCompany.Size = New System.Drawing.Size(188, 24)
         Me.lblCompany.TabIndex = 17
-        Me.lblCompany.Text = "Chikadings INC."
+        Me.lblCompany.Text = "Bug Crusaders Inc."
         '
         'lblOvertimePay
         '
@@ -205,7 +205,7 @@ Partial Class form1
         'txtOvertimePay
         '
         Me.txtOvertimePay.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOvertimePay.Location = New System.Drawing.Point(205, 229)
+        Me.txtOvertimePay.Location = New System.Drawing.Point(222, 229)
         Me.txtOvertimePay.Name = "txtOvertimePay"
         Me.txtOvertimePay.Size = New System.Drawing.Size(134, 31)
         Me.txtOvertimePay.TabIndex = 19

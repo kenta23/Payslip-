@@ -28,6 +28,10 @@
 
     End Sub
 
+    Private Sub lblCompany_Click(sender As Object, e As EventArgs) Handles lblCompany.Click
+
+    End Sub
+
     Private Sub txtWGP_TextChanged(sender As Object, e As EventArgs) Handles txtWGP.TextChanged
 
     End Sub

@@ -1,5 +1,5 @@
 ﻿Public Class form1
-    Dim RatePerDay, OTrate, WGP, total, SS, health, totalDeduc, tax As Double
+    Dim RatePerDay, OTrate, total, SS, health, totalDeduc, tax As Double
 
     'deductions total 
 
@@ -33,6 +33,23 @@
     End Sub
 
     Private Sub txtWGP_TextChanged(sender As Object, e As EventArgs) Handles txtWGP.TextChanged
+        SS = Val(txtWGP.Text) * 0.05
+        health = Val(txtWGP.Text) * 0.03
+        tax = Val(txtWGP.Text) * 0.1
+
+        totalDeduc = SS + health + tax
+        TxtTotalDeduc.Text = totalDeduc
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TxtTotalDeduc.TextChanged
+
+    End Sub
+
+    Private Sub Label2_Click_1(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 

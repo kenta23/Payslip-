@@ -39,6 +39,9 @@ Partial Class form1
         Me.lblCompany = New System.Windows.Forms.Label()
         Me.lblOvertimePay = New System.Windows.Forms.Label()
         Me.txtOvertimePay = New System.Windows.Forms.TextBox()
+        Me.TxtTotalDeduc = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblEmployee
@@ -131,7 +134,7 @@ Partial Class form1
         '
         Me.lblSS.AutoSize = True
         Me.lblSS.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSS.Location = New System.Drawing.Point(453, 133)
+        Me.lblSS.Location = New System.Drawing.Point(460, 95)
         Me.lblSS.Name = "lblSS"
         Me.lblSS.Size = New System.Drawing.Size(69, 24)
         Me.lblSS.TabIndex = 9
@@ -142,7 +145,7 @@ Partial Class form1
         '
         Me.lblHealth.AutoSize = True
         Me.lblHealth.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHealth.Location = New System.Drawing.Point(453, 173)
+        Me.lblHealth.Location = New System.Drawing.Point(460, 132)
         Me.lblHealth.Name = "lblHealth"
         Me.lblHealth.Size = New System.Drawing.Size(99, 24)
         Me.lblHealth.TabIndex = 11
@@ -153,7 +156,7 @@ Partial Class form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(453, 217)
+        Me.Label1.Location = New System.Drawing.Point(460, 170)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(87, 24)
         Me.Label1.TabIndex = 13
@@ -163,18 +166,20 @@ Partial Class form1
         'lblTotal
         '
         Me.lblTotal.AutoSize = True
+        Me.lblTotal.BackColor = System.Drawing.Color.Transparent
         Me.lblTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotal.Location = New System.Drawing.Point(460, 309)
+        Me.lblTotal.ForeColor = System.Drawing.Color.Black
+        Me.lblTotal.Location = New System.Drawing.Point(460, 265)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(66, 24)
+        Me.lblTotal.Size = New System.Drawing.Size(87, 24)
         Me.lblTotal.TabIndex = 15
         Me.lblTotal.Tag = ""
-        Me.lblTotal.Text = "Total:  "
+        Me.lblTotal.Text = "TOTAL:  "
         '
         'btnCompute
         '
         Me.btnCompute.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCompute.Location = New System.Drawing.Point(457, 260)
+        Me.btnCompute.Location = New System.Drawing.Point(641, 306)
         Me.btnCompute.Name = "btnCompute"
         Me.btnCompute.Size = New System.Drawing.Size(97, 32)
         Me.btnCompute.TabIndex = 16
@@ -185,7 +190,7 @@ Partial Class form1
         '
         Me.lblCompany.AutoSize = True
         Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCompany.Location = New System.Drawing.Point(-1, 9)
+        Me.lblCompany.Location = New System.Drawing.Point(290, 9)
         Me.lblCompany.Name = "lblCompany"
         Me.lblCompany.Size = New System.Drawing.Size(188, 24)
         Me.lblCompany.TabIndex = 17
@@ -210,11 +215,41 @@ Partial Class form1
         Me.txtOvertimePay.Size = New System.Drawing.Size(134, 31)
         Me.txtOvertimePay.TabIndex = 19
         '
+        'TxtTotalDeduc
+        '
+        Me.TxtTotalDeduc.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTotalDeduc.Location = New System.Drawing.Point(622, 217)
+        Me.TxtTotalDeduc.Name = "TxtTotalDeduc"
+        Me.TxtTotalDeduc.Size = New System.Drawing.Size(107, 30)
+        Me.TxtTotalDeduc.TabIndex = 20
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(467, 208)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(0, 13)
+        Me.Label2.TabIndex = 21
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(460, 221)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(156, 24)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Tag = ""
+        Me.Label3.Text = "Total Deductions:"
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(767, 404)
+        Me.ClientSize = New System.Drawing.Size(767, 355)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TxtTotalDeduc)
         Me.Controls.Add(Me.txtOvertimePay)
         Me.Controls.Add(Me.lblOvertimePay)
         Me.Controls.Add(Me.lblCompany)
@@ -256,4 +291,7 @@ Partial Class form1
     Friend WithEvents lblCompany As Label
     Friend WithEvents lblOvertimePay As Label
     Friend WithEvents txtOvertimePay As TextBox
+    Friend WithEvents TxtTotalDeduc As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class
